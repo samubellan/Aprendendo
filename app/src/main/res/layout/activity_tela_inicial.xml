@@ -16,6 +16,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/buttonshape"
         android:text="Adicionar Tarefa"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

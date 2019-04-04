@@ -12,6 +12,9 @@ public class MainActivity extends AppCompatActivity {
     //cria a classe Button com o nome Entrar
     private Button Entrar;
 
+    //criar a classe Button com o nome NovoUsuario
+    private Button NovoUsuario;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         //Atribui a Entrar o botão com o ID buttonEntrar
         Entrar = findViewById(R.id.buttonEntrar);
+        //Atribui a NovoUsuario o botão com o ID buttonUsuario
+        NovoUsuario = findViewById(R.id.buttonUsuario);
 
         //Adiciona um evento de clique ao botão Entrar
         Entrar.setOnClickListener(new OnClickListener() {
@@ -31,6 +36,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
     });
+
+        //Adiciona um evento de clique ao botão NovoUsuario
+        NovoUsuario.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //Instancia uma intent para utilizar o startActivity, primeiro parametro é o getApplicationContext,
+                // e o segundo é a activity que será aberta + ".class"
+                Intent intent = new Intent(getApplicationContext(), NovoUsuario.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
     }
