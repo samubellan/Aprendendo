@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btInserirTarefa"
         android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -15,6 +15,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/buttonshape"
+        android:onClick="adicionarItens"
         android:text="Adicionar Tarefa"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +25,7 @@
         app:layout_constraintVertical_bias="0.985" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/etTarefaDigitada"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -57,14 +58,17 @@
         app:layout_constraintVertical_bias="0.014" />
 
     <ListView
+        android:id="@+id/listTarefas"
         android:layout_width="395dp"
-        android:layout_height="443dp"
+        android:layout_height="441dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013" />
+
 </android.support.constraint.ConstraintLayout>
