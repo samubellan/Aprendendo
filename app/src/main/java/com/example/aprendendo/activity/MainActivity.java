@@ -7,9 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import com.example.aprendendo.NovoUsuario;
 import com.example.aprendendo.R;
-import com.example.aprendendo.TelaInicialActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //Instancia uma intent para utilizar o startActivity, primeiro parametro é o getApplicationContext,
                 // e o segundo é a activity que será aberta + ".class"
-                Intent intent = new Intent(getApplicationContext(), com.example.aprendendo.TelaInicialActivity.class);
+                Intent intent = new Intent(getApplicationContext(), TelaInicialActivity.class);
                 startActivity(intent);
             }
     });
@@ -48,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //Instancia uma intent para utilizar o startActivity, primeiro parametro é o getApplicationContext,
                 // e o segundo é a activity que será aberta + ".class"
-                Intent intent = new Intent(getApplicationContext(), com.example.aprendendo.NovoUsuario.class);
+                Intent intent = new Intent(getApplicationContext(), com.example.aprendendo.activity.NovoUsuario.class);
                 startActivity(intent);
             }
         });

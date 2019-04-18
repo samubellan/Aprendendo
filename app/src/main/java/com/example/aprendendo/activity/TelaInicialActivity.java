@@ -1,4 +1,4 @@
-package com.example.aprendendo;
+package com.example.aprendendo.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
