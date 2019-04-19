@@ -29,15 +29,15 @@ public class MainActivity extends AppCompatActivity {
 
         //Adiciona um evento de clique ao botão Entrar
         Entrar.setOnClickListener(new OnClickListener() {
-
-            public void onClick(View view){
+            @Override
+            public void onClick(View v) {
 
                 //Instancia uma intent para utilizar o startActivity, primeiro parametro é o getApplicationContext,
                 // e o segundo é a activity que será aberta + ".class"
-                Intent intent = new Intent(getApplicationContext(), TelaInicialActivity.class);
+                Intent intent = new Intent(getApplicationContext(), com.example.aprendendo.activity.TelaInicialActivity.class);
                 startActivity(intent);
             }
-    });
+        });
 
         //Adiciona um evento de clique ao botão NovoUsuario
         NovoUsuario.setOnClickListener(new OnClickListener() {
