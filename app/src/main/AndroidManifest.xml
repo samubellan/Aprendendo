@@ -14,7 +14,7 @@
         <activity android:name=".activity.NovoUsuario" />
         <activity android:name=".activity.TelaInicialActivity" />
         <activity android:name=".activity.MainActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
