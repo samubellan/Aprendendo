@@ -9,12 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.TelaCadastroTarefas"></activity>
-        <activity android:name=".activity.TelaNovaLista" />
-        <activity android:name=".activity.NovoUsuario" />
-        <activity android:name=".activity.TelaInicialActivity" />
+        <activity android:name=".activity.TelaCadastroTarefas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.TelaNovaLista"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.NovoUsuario"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.TelaInicialActivity"
+            android:screenOrientation="portrait"/>
         <activity android:name=".activity.MainActivity"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

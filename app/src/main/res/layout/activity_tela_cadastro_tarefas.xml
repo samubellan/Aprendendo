@@ -7,7 +7,7 @@
     tools:context=".activity.TelaCadastroTarefas">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView2"
+        android:id="@+id/recyclerTarefas"
         android:layout_width="395dp"
         android:layout_height="543dp"
         tools:layout_editor_absoluteX="8dp"
@@ -25,7 +25,7 @@
         android:textAllCaps="false"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView2"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerTarefas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
