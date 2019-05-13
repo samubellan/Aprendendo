@@ -35,7 +35,6 @@ public class AdapterListas extends RecyclerView.Adapter<AdapterListas.MyViewHold
 
         Listas lista = listaDeListas.get(i);
         myViewHolder.tituloLista.setText(lista.getTitulo());
-        myViewHolder.primeitoItemLista.setText(lista.getPrimeiroItem());
     }
 
     @Override
@@ -45,12 +44,10 @@ public class AdapterListas extends RecyclerView.Adapter<AdapterListas.MyViewHold
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
         TextView tituloLista;
-        TextView primeitoItemLista;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             tituloLista = itemView.findViewById(R.id.textTitle);
-            primeitoItemLista = itemView.findViewById(R.id.textFirstItem);
         }
     }
 

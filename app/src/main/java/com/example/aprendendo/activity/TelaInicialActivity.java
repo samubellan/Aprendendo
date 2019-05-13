@@ -61,13 +61,13 @@ public class TelaInicialActivity extends AppCompatActivity {
     }
 
     public void criarListas(){
-        Listas lista = new Listas("MERCADO", "ARROZ");
+        Listas lista = new Listas("MERCADO");
         this.listagemDasListas.add(lista);
 
-        lista = new Listas("TRABALHO", "LIGAR PARA BRUNA");
+        lista = new Listas("TRABALHO");
         this.listagemDasListas.add(lista);
 
-        lista = new Listas("COMPROMISSOS", "REUNIÃO 20/04 15:00h");
+    lista = new Listas("COMPROMISSOS");
         this.listagemDasListas.add(lista);
     }
 

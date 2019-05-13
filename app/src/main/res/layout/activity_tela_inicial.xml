@@ -27,8 +27,8 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerListas"
-        android:layout_width="383dp"
-        android:layout_height="571dp"
+        android:layout_width="386dp"
+        android:layout_height="546dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
