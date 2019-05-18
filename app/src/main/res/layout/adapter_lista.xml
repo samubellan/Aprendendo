@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
@@ -14,7 +15,7 @@
         <TextView
             android:id="@+id/textTitle"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:paddingLeft="15dp"
             android:paddingTop="3dp"
             android:text="Título Lista"
@@ -23,11 +24,17 @@
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/editContato"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageView
         android:id="@+id/removeContato"
         android:layout_width="50dp"
         android:layout_height="match_parent"
         android:clickable="true"
-        android:padding="1dp"
         android:src="@android:drawable/ic_delete" />
 
 </LinearLayout>
