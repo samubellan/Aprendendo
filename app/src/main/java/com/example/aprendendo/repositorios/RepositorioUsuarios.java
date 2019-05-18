@@ -18,7 +18,7 @@ public class RepositorioUsuarios {
 
         if (singleton == null) {
             singleton = new RepositorioUsuarios();
-            singleton.dbUsuarios = new BdHelper(context,"",null,0).getWritableDatabase();
+            singleton.dbUsuarios = new BdHelper(context).getWritableDatabase();
         }
         return singleton;
     }
@@ -54,7 +54,7 @@ public class RepositorioUsuarios {
             String senha = cursor.getString(
                     cursor.getColumnIndexOrThrow("password"));
 
-            Usuario usuario = new Usuario(id, nome, sobrenome, email, senha);
+            Usuario usuario = new Usuario();
             itens.add(usuario);
         }
         cursor.close();

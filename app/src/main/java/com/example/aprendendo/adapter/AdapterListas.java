@@ -50,5 +50,4 @@ public class AdapterListas extends RecyclerView.Adapter<AdapterListas.MyViewHold
             tituloLista = itemView.findViewById(R.id.textTitle);
         }
     }
-
 }

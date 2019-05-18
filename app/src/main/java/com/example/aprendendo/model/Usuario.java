@@ -7,12 +7,16 @@ public class Usuario {
     private String email;
     private String password;
 
-    public Usuario(long id, String nome, String sobrenome, String email, String senha) {
+    /*public Usuario(long id, String nome, String sobrenome, String email, String senha) {
         this.id = id;
         this.name = nome;
         this.lastName = sobrenome;
         this.email = email;
         this.password = senha;
+    }*/
+
+    public Usuario() {
+
     }
 
     public long getId() {

@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.example.aprendendo.R;
 import com.example.aprendendo.model.Usuario;
-import com.example.aprendendo.repositorios.RepositorioUsuarios;
+import com.example.aprendendo.utils.UsuarioDAO;
 
 import org.w3c.dom.Text;
 
@@ -117,9 +117,14 @@ public class NovoUsuario extends AppCompatActivity {
 
         //verificando se as senhas conhecidem e inserindo os dados no banco
         else if(password.equals(passwordConfirmation)){
+            UsuarioDAO usuarioDAO = new UsuarioDAO(getApplicationContext());
+            Usuario usuario = new Usuario();
+            usuario.setName(name);
+            usuario.setLastName(lastName);
+            usuario.setEmail(email);
+            usuario.setPassword(password);
+            usuarioDAO.salvar(usuario);
             Toast.makeText(getApplicationContext(),"Usuário "+name+" cadastrado :)", Toast.LENGTH_SHORT).show();
-            Usuario usuario = new Usuario(1, name, lastName, email, password);
-            RepositorioUsuarios repositorio = RepositorioUsuarios.getDbUsuarios(this);
             finish();
         }
         //mensagem informando que senhas não conhecidem
@@ -129,4 +134,5 @@ public class NovoUsuario extends AppCompatActivity {
             colorPasswordConfirmation.setTextColor(Color.RED);
         }
     }
+
 }
