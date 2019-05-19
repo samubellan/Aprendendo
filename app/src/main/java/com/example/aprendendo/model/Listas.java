@@ -1,12 +1,11 @@
 package com.example.aprendendo.model;
 
-public class Listas {
+import java.io.Serializable;
+
+public class Listas implements Serializable {
 
     private String titulo;
-
-    public Listas(String titulo) {
-        this.titulo = titulo;
-    }
+    private Long id;
 
     public String getTitulo() {
         return titulo;
@@ -14,5 +13,13 @@ public class Listas {
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

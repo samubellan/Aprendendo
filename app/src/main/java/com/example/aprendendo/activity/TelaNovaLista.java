@@ -1,4 +1,4 @@
-package com.example.aprendendo.activity;
+/*package com.example.aprendendo.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +20,7 @@ public class TelaNovaLista extends AppCompatActivity {
         cadastrarNovaLista = findViewById(R.id.buttonCriarLista);
 
         /*Finalizando (finish();) a activity, dentro deste setOnClickListner iremos
-        inserir também as ações para inserir os parâmetros no banco de dados*/
+        inserir também as ações para inserir os parâmetros no banco de dados
         cadastrarNovaLista.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,3 +30,4 @@ public class TelaNovaLista extends AppCompatActivity {
 
     }
 }
+*/

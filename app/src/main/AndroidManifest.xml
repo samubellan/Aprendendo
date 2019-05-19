@@ -11,11 +11,12 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activity.TelaCadastroTarefas"
             android:screenOrientation="portrait"/>
-        <activity android:name=".activity.TelaNovaLista"
-            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.TelaInicialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".activity.NovoUsuario"
             android:screenOrientation="portrait"/>
-        <activity android:name=".activity.TelaInicialActivity"
+        <activity android:name=".activity.AdicionarListaActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".activity.MainActivity"
             android:screenOrientation="portrait">
