@@ -1,6 +1,8 @@
 package com.example.aprendendo.utils;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
@@ -21,11 +23,8 @@ public class BdHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         //string que armazenará os códigos SQL para criação do bd
         String sqlUsuarios = "CREATE TABLE IF NOT EXISTS "+ TABELA_USUARIOS
-                       + "(id integer primary key autoincrement," +
-                        " name varchar(30), " +
-                        " lastname varchar(50)," +
-                        " email varchar(50)," +
-                        " password varchar(30))";
+                       + "(username text primary key, " +
+                        " password text)";
 
         //string que armazenará os códigos SQL para criação do bd
         String sqlListas = "CREATE TABLE IF NOT EXISTS "+ TABELA_LISTAS
@@ -63,6 +62,24 @@ public class BdHelper extends SQLiteOpenHelper {
             catch (Exception e){
                 Log.i("INFO DB", "Erro ao atualizar APP :(" + e.getMessage());
             }
+        }
+
+        public long CriarUsuario(String username, String password){
+        SQLiteDatabase bd = getWritableDatabase();
+            ContentValues cv = new ContentValues();
+            cv.put("username", username);
+            cv.put("password", password);
+            long result = bd.insert("usuarios", null, cv);
+            return result;
+        }
+
+        public String ValidarLogin(String username, String password){
+        SQLiteDatabase bd = getReadableDatabase();
+        Cursor c = bd.rawQuery("SELECT * FROM " + TABELA_USUARIOS + " WHERE username=? AND password=?", new String[]{username, password});
+        if (c.getCount()>0){
+            return "OK";
+        }
+        return "ERRO";
         }
 }
 
