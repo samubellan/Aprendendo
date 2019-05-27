@@ -59,16 +59,12 @@ public class AdicionarListaActivity extends AppCompatActivity {
 
                         //Atualizar no banco de dados
                         if (listaDAO.atualizar(listas)){
-                            finish();
                             Toast.makeText(getApplicationContext(),"Sucesso ao salvar tarefa!", Toast.LENGTH_SHORT).show();
-
+                            finish();
                         }else {
                             Toast.makeText(getApplicationContext(),"Erro ao salvar tarefa!", Toast.LENGTH_SHORT).show();
-
                         }
                     }
-
-
                 }else{//salvar
 
                     String nomeLista = editLista.getText().toString();

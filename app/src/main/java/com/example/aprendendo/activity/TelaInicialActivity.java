@@ -79,6 +79,7 @@ public class TelaInicialActivity extends AppCompatActivity {
                                         carregarLista();
                                         if ( tarefaDAO.deletar(listaSelecionada)){
                                             Toast.makeText(getApplicationContext(),"Sucesso ao excluir terefa!", Toast.LENGTH_SHORT).show();
+                                            carregarLista();
                                         }else{
                                             Toast.makeText(getApplicationContext(),"Erro ao excluir terefa!", Toast.LENGTH_SHORT).show();
                                         }

@@ -49,7 +49,7 @@ public class NovoUsuario extends AppCompatActivity {
                 if(res>0){
                     Toast.makeText(NovoUsuario.this, "Registro feito com SUCESSO!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(NovoUsuario.this, MainActivity.class);
-                    startActivity(intent);
+                    finish();
                 }else{
                     Toast.makeText(NovoUsuario.this, "Registro inválido, tente novamente", Toast.LENGTH_SHORT).show();
 
