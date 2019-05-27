@@ -24,7 +24,6 @@ public class AdicionarListaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tela_nova_lista);
 
         editLista = findViewById(R.id.textLista);
-        //cadastrarNovaLista = findViewById(R.id.buttonCriarLista);
 
         //Recuperar tarefa, caso seja edição
         listaAtual = (Listas) getIntent().getSerializableExtra("listaSelecionada");

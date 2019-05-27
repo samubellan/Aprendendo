@@ -23,18 +23,4 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/editContato"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
-
-    <ImageView
-        android:id="@+id/removeContato"
-        android:layout_width="50dp"
-        android:layout_height="match_parent"
-        android:clickable="true"
-        android:src="@android:drawable/ic_delete" />
-
 </LinearLayout>

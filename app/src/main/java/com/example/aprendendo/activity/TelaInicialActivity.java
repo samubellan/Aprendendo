@@ -48,9 +48,6 @@ public class TelaInicialActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //Atribui a novaLista o botão com o ID buttonCriarLista
-        //novaLista = findViewById(R.id.buttonCriarLista);
-
         //Atribui a listagemTarefas o botão com o ID recyclerListas
         recyclerListas = findViewById(R.id.recyclerListaTarefas);
 
@@ -107,31 +104,6 @@ public class TelaInicialActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
-
-
-
-
-                //Instancia uma intent para utilizar o startActivity, primeiro parametro é o getApplicationContext,
-                // e o segundo é a activity que será aberta + ".class"
-        /*novaLista.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), AdicionarListaActivity.class);
-                startActivity(intent);
-            }
-        });*/
-
-                //**INICIO DE CONFIGURAÇÃO DO RECYCLER VIEW**
-
-                //Listagem de Listas
-                //this.criarListas();
-
-                //Configurar Adapter
-                AdapterListas adapter = new AdapterListas(listagemDasListas);
     }
 
     public void carregarLista(){
